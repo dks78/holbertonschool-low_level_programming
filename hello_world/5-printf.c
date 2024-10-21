@@ -1,9 +1,8 @@
 #include <stdio.h>
 
 /*
- *
- *finction to print the mess
- *
+ * Function to print the message
+ * This function is the entry point of the program.
  */
 
 int main(void)
