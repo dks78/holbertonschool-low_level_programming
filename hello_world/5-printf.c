@@ -1,8 +1,12 @@
 #include <stdio.h>
 
 /*
- * Function to print the message
- * This function is the entry point of the program.
+ *
+ *  main - Prints a text
+ *
+ *Return: Always 0 (Success)
+ *
+ *
  */
 
 int main(void)
