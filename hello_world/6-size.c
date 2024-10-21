@@ -1,11 +1,13 @@
 #include <stdio.h>
 
-/*
-* main - Entry point of the program
-*
-* retrun: Always 0 (succes)
-*
-*/
+/**
+ * main - Entry point of the program
+ *
+ * Description: This function prints a specific string.
+ *
+ * Return: Always 0 (Success)
+ */
+
 
 int main(void)
 {
