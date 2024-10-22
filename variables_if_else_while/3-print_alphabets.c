@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - print alphabet in reverse lowerse 
+ * main - print alphabet in reverse lowerse
+ *
  * Return: returns 0
  *
 */
