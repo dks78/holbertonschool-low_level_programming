@@ -1,24 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
- /**
-  *  main - Entry point of the program
-  *
-  *
-  *
-  * Return: Always 0 (Success)
-  *
-  */
+/**
+ * main - Entry point of the program
+ *
+ * Description: This function prints a specific string
+ *
+ * Return: Always 0 (Success)
+ *
+ */
 int main(void)
 {
+	char c;
 
-    char c;
+	for (c = 'a'; c <= 'z'; c++)
 
-    for (c = 'a'; c <= 'z'; c++)
-    {
-        putchar(c);
-    }
-    putchar('\n');
-    return 0;
+	{
+		putchar(c);
+	}
+	putchar('\n');
+	return (0);
 }
