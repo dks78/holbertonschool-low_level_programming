@@ -19,6 +19,6 @@ int main(void)
     {
         putchar(c);
     }
-    putchar('\n'); // Pour ajouter un retour à la ligne après l'alphabet
+    putchar('\n');
     return 0;
 }
