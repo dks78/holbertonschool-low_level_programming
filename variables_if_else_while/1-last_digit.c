@@ -6,14 +6,10 @@
  *
  * main - Entry point of the program
  *
- * Description: This function prints a specific string.
+ *
  *
  * Return: Always 0 (Success)
- *
- *
- *
  */
-
 int main(void)
 {
 	int n;
