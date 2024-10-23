@@ -11,17 +11,17 @@
 */
 int main(void)
 {
-    int nombre;
+	int nombre;
 
-    for (nombre = 0; nombre <= 9; nombre++)
-    {
-        putchar(nombre + '0');  
-        if (nombre != 9)     
-        {
-            putchar(',');     
-            putchar(' ');    
-        }
-    }
-    putchar('\n'); 
-    return (0);
+	for (nombre = 0; nombre <= 9; nombre++)
+	{
+		putchar(nombre + '0');
+		if (nombre != 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+	}
+		putchar('\n');
+		return (0);
 }
