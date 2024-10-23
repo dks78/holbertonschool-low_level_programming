@@ -1,19 +1,26 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * main - Check the code for the _islower function.
  *
- * Return: Always 0.
- */
+ * Description: This function tests the _islower function
+ *              with different characters and prints the
+ *              results using the _putchar function.
+ *  Return: Always 0 (Success).  
+ *
+*/
+
 int main(void)
 {
     int r;
 
-    r = _islower('H');
+    r = _isalpha('H');
     _putchar(r + '0');
-    r = _islower('o');
+    r = _isalpha('o');
     _putchar(r + '0');
-    r = _islower(108);
+    r = _isalpha(108);
+    _putchar(r + '0');
+    r = _isalpha(';');
     _putchar(r + '0');
     _putchar('\n');
     return (0);
