@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
- /**
- *
- * main - Entry point of the program
- *
+/**
+ * main - print to variable
  *
  *
- * Return: Always 0 (Success)
- */
+ * Return: 0 Always (Success)
+ *
+ *
+*/
 int main(void)
 {
 	int n;
