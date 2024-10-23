@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * File: 1-alphabet.c
+ * print_alphabet - Prints the alphabet in lowercase followed by a newline
  *
- * Auth: Brennan D Baraban
+ * Return: Nothing (void)
 */
 void print_alphabet(void)
 {
