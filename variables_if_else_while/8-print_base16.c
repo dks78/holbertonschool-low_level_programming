@@ -9,19 +9,22 @@
  *
  *
 */
-int main (void)
+int main(void)
 {
-    char Affiche;
-    char lettre;
+	char Affiche;
+	char lettre;
 
-    for(Affiche = '0' ; Affiche <= '9' ; Affiche++ )
-    { 
-        putchar(Affiche);
-    }
-    for(lettre = 'a' ; lettre <= 'f' ; lettre++)
-    {
-        putchar(lettre);
-    }
-    putchar('\n');
-    return (0);
+	for (Affiche = '0' ; Affiche <= '9' ; Affiche++)
+
+	{
+		putchar(Affiche);
+	}
+
+	for (lettre = 'a' ; lettre <= 'f' ; lettre++)
+
+	{
+		putchar(lettre);
+	}
+		putchar('\n');
+		return (0);
 }
