@@ -2,19 +2,21 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - print to variable 
+ * main - print to variable
  *
  *
  * Return: Always 0 (Success)
  *
 */
-int main (void)
+int main(void)
 {
 	int i;
+
 	for (i = 0 ; i < 10 ; i++)
 	{
-        	printf("%d", i);
+		printf("%d", i);
 	}
+
 	printf("\n");
 	return (0);
 }
