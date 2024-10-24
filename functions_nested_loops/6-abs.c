@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * print_sign - check sign.
+ * _abs - check sign.
  * @n: integer.
  * Return: Always 0.
 */
