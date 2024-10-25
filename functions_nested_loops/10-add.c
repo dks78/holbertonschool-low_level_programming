@@ -1,13 +1,17 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
+
 /**
-  * times_table - Prints the 9 times table, starting with 0.
-  *
-  * Return: ...
-  */
+ * add - Adds two values
+ * @a: The first number to be computed
+ * @b: The second number to be computed
+ *
+ * Return: Integer value
+*/
 int add(int a, int b)
 {
 
-    return a + b;
+return (a + b);
+
 }
