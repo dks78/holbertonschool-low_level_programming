@@ -5,7 +5,11 @@
  *
  * Return: Always 0.
  */
-    for (int i = 0; i < n; i++) {
-        putchar('_'); // Affiche le caractère '_'
-    }
-    putchar('\n');
+int main(void)
+{
+    print_line(0);
+    print_line(2);
+    print_line(10);
+    print_line(-4);
+    return (0);
+}
