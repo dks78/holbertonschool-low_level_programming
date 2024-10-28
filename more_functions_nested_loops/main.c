@@ -5,8 +5,7 @@
  *
  * Return: Always 0.
  */
-int main(void)
-{
-    more_numbers();
-    return (0);
-}
+    for (int i = 0; i < n; i++) {
+        putchar('_'); // Affiche le caractère '_'
+    }
+    putchar('\n');
