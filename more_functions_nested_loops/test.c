@@ -6,15 +6,25 @@
  *
  * Return: Always 0.
  */
-int mul(int a, int b);
+ void print_diagonal(int n);
 
-int main(void)
-{
-    printf("%d\n", mul(98, 1024));
-    printf("%d\n", mul(-402, 4096));
-    return (0);
+int main(void) {
+    print_diagonal(0);
+    print_diagonal(2);
+    print_diagonal(10);
+    print_diagonal(-4);
+    return 0;
 }
-int mul(int a, int b) 
-{
-    return a * b;
+void print_diagonal(int n) {
+    if (n <= 0) {
+        putchar('\n');
+    } else {
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < i; j++) {
+                putchar(' ');
+            }
+            putchar('\\');
+            putchar('\n');
+        }
+    }
 }
