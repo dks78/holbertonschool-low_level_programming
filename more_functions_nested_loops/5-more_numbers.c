@@ -9,11 +9,14 @@
 void more_numbers(void)
 {
 
-for (int i = 0; i < 10; i++)
+int i;
+int n;
+
+for(i = 0; i < 10; i++)
 
 {
 
-for (int n = 0; n <= 14; n++)
+for( n = 0; n <= 14; n++)
 
 {
 
