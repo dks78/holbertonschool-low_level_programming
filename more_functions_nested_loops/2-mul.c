@@ -1,0 +1,12 @@
+#include "main.h"
+/**
+ * _isupper - function
+ *
+ * print lphabet_x10 - Prints the alphabet in lowercase followed by a newline
+ * @c: charactere
+ * Return: Nothing (void)
+*/
+int mul(int a, int b) 
+{
+    return a * b;
+}
