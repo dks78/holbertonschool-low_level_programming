@@ -1,11 +1,10 @@
 #include "main.h"
-
 /**
- * _isdigit - function
+ *  _isdigit - function
  *
- * print_numbers: - Prints the alphabet in lowercase followed by a newline
- * n: charactere
- * Return: Nothing (void)
+ *  print_numbers - function to print 0 to 9
+ *  n: charactere
+ *  Return: Nothing (void)
 */
 void print_numbers(void)
 {
