@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-#include <string.h>
+
 /**
  * @str: check the code
  * _puts: fonction
@@ -10,12 +10,18 @@
 
 void print_rev(char *s)
 {
-    char M[100];
-    
-    strncpy(M, s, sizeof(M) - 1);
-    M[sizeof(M) - 1] = '\0';
+   
+    int  length = 0;
 
-    reverse_str(M);
+    while ( s[length] != '\0')
+    {
 
-    printf("%s\n", M);
+        length++;
+    } 
+  
+    for(length -= 1; length >= 0; length--)
+    {
+    _putchar(s[length]);
+    }
+     _putchar('\n');
 } 
