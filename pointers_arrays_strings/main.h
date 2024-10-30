@@ -7,4 +7,5 @@ void swap_int(int *a, int *b);
 int _strlen(char *s);
 void print_rev(char *s);
 void reverse_str(char *str);
+void rev_string(char *s);
 #endif
