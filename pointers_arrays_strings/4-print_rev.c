@@ -11,6 +11,7 @@
 void print_rev(char *s)
 {
     char M[100];
+    
     strncpy(M, s, sizeof(M) - 1);
     M[sizeof(M) - 1] = '\0';
 
