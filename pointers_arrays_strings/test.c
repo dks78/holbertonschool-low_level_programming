@@ -1,10 +1,9 @@
-#include <stdio.h>
-
-int main(void)
-{ 
-
-    int nb = 15;
-    int *pointer = &nb;
-
-   printf("La valeur à laquelle pointer pointe est : %d\n", *pointer);  
-}
+ while (s[i] == ' ') {
+        i++;
+    }
+    while (s[i] == '+' || s[i] == '-') {
+        if (s[i] == '-') {
+            sign *= -1;
+        }
+        i++;
+    }
