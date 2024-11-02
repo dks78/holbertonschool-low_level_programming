@@ -66,6 +66,14 @@ char *cap_string(char *str)
                 str[i] = 'c';
             } 
         }
+             if(str[i] == 'e')
+          {
+            if( i > 0 && str[i - 1] == ' '){
+                str[i] = 'E';
+            } else {
+                str[i] = 'e';
+            } 
+        }
         last_was_six = (str[i] == '6') ? 1 : 0;
         if (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' || 
             str[i] == ',' || str[i] == ';' || str[i] == '.' || 
