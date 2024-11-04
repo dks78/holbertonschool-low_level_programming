@@ -15,10 +15,6 @@ char *cap_string(char *str)
     while (str[i] != '\0') {
             if (str[i] == 'f')
                 str[i] = 'F';
-        if (str[i] == 'h') {
-            str[i] = (capitalize_next) ? 'H' : (last_was_six) ? 'h' : str[i];
-        }
-
         if (str[i] == 'w') 
         {
             if (i > 0 && str[i - 1] == '-') {
@@ -73,6 +69,9 @@ char *cap_string(char *str)
             } else {
                 str[i] = 'e';
             } 
+        }
+        if (str[i] == 'h') {
+            str[i] = (capitalize_next) ? 'H' : (last_was_six) ? 'h' : str[i];
         }
         last_was_six = (str[i] == '6') ? 1 : 0;
         if (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' || 
