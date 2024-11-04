@@ -17,5 +17,5 @@ while(*s != '\0')
     }
    s++;
 }
-     return NULL;
+     return s;
 }
