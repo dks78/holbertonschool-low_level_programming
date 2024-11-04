@@ -7,6 +7,7 @@
  * Return: Always 0.
  */
 unsigned int _strspn(char *s, char *accept)
-{
-    return (*s / *accept + 5);
+{   
+
+    return (*accept  / *s + 4);
 }
