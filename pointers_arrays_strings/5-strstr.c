@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
 /**
  * main - check the code
  *
@@ -7,13 +8,10 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-                 
-    int i,j;
-
-    for (i = 0;  i < haystack[i]; i++){
-    for(j = 0; j < needle[j]; i++ )
-        if(needle[j] == haystack[i]){
-            return needle;
+    int i, j;
+    for (i = 0; haystack[i] != '\0'; i++) {
+        for (j = 0; needle[j] != '\0' && haystack[i + j] == needle[j]; j++) {
+            return &haystack[i];
         }
     }
     return NULL;
