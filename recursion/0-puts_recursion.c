@@ -1,12 +1,16 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * _puts_recursion - affiche une chaîne de caractères suivie d'une nouvelle ligne
+ * @s: pointeur vers la chaîne de caractères à afficher
  */
-
 void _puts_recursion(char *s)
 {
-    puts(s);
+    if(*s == '\0'){
+      _putchar('\n');
+      return;
+    }
+    
+    _putchar(*s);
+    _puts_recursion(s + 1);
 }
