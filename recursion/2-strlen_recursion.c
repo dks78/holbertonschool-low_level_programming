@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _strlen_recursion - retourne la longueur d'une chaîne de caractères
+ *_strlen_recursion - retourne la longueur d'une chaîne de caractères
  * @s: pointeur vers la chaîne de caractères
  *
  * Retourne: la longueur de la chaîne
