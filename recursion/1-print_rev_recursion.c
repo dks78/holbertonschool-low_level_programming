@@ -6,17 +6,11 @@
  * Return: Always 0.
  */
 void _print_rev_recursion(char *s){
-    int i;
-    int len = 0;
-    while (s[len] != '\0')
-    {
-        len++;
-    }
+   
 
-    for (i = len - 1; i >= 0; i--)
-    {
-        _putchar(s[i]);
-    }
-    _putchar(*s);
+   if (*s == '\0')
+        return;
 
+    _print_rev_recursion(s + 1);
+    _putchar(*s); 
 }
