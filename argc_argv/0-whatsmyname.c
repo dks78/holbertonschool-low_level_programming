@@ -10,9 +10,16 @@
  */
 int main(int argc, char *argv[])
 {
-(void)argc;/* Ignorer le paramètre argc */
 
-printf("%s\n", argv[0]);/* Afficher le nom du programme */
+(void)argc;
 
-return (0);/* Retourner 0 pour indiquer un succès */
+printf("%s\n", argv[0]);
+printf("%s\n", argv[1]);
+printf("%s\n", argv[2]);
+printf("%s\n", argv[3]);
+printf("%s\n", argv[4]);
+printf("%s\n", argv[5]);
+
+
+return (0);
 }
