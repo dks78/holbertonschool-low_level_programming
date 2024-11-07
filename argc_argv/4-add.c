@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 /**
  * main : Affiche le nombre d'arguments passés au programme
  * @argc: Le nombre d'arguments passés au programme
