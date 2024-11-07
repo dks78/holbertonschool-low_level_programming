@@ -9,8 +9,8 @@
  */
 int main(int argc, char *argv[])
 {
-        int i;
-        int cpt = 1;
+    int i;
+    int cpt = 1;
     if (argc != 3)
     {
         printf("Error\n");
