@@ -10,9 +10,9 @@
 
 int main(int argc, char *argv[])
 {
-    int i;
+    int i,j;
     int cpt = 1;
-
+    int c;
     if (argc == 1)
     {
         printf("0\n");
@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 
     for (i = 1; i < argc; i++)
     {
-        for (int j = 0; argv[i][j] != '\0'; j++)
+        for (j = 0; argv[i][j] != '\0'; j++)
         {
             if (argv[i][j] < '0' || argv[i][j] > '9')
             {
@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
             }
         }
 
-        int c = atoi(argv[i]);
+         c = atoi(argv[i]);
         cpt += c;
     }
 
