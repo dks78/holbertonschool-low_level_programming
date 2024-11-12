@@ -36,8 +36,10 @@ char *_strdup(char *str)
     longeur++;
     }
 
-
+    
     /*Allouer de la mémoire pour la nouvelle chaîne*/
+
+
     copie = malloc(sizeof(char) * (longeur + 1));
     if (copie == NULL)
         return NULL;
