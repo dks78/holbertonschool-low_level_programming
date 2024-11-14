@@ -14,4 +14,5 @@ float age;
 char *owner;
 } dog;
 
+void print_dog(struct dog *d);
 #endif
