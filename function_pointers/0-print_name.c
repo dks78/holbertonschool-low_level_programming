@@ -8,8 +8,11 @@
  * en lui passant @name comme argument. Cela permet d'exécuter une
  * opération  définie par la fonction passée sur la chaîne @name.
  */
+
 void print_name(char *name, void (*f)(char *))
 {
+if (name == NULL || f == NULL)
+return;
 f(name);
 }
 
