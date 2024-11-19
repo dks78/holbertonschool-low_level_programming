@@ -17,3 +17,7 @@
     }
     return -1; 
  }
+int cmp(int n)
+{
+    return (n == 5) ? 1 : 0;
+}
