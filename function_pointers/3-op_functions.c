@@ -10,9 +10,8 @@
  */
 int op_add(int a, int b)
 {
-    return (a + b);
+return (a + b);
 }
-
 /**
  * op_sub - Returns the difference of a and b.
  * @a: First integer.
@@ -22,9 +21,8 @@ int op_add(int a, int b)
  */
 int op_sub(int a, int b)
 {
-    return (a - b);
+return (a - b);
 }
-
 /**
  * op_mul - Returns the product of a and b.
  * @a: First integer.
@@ -34,9 +32,8 @@ int op_sub(int a, int b)
  */
 int op_mul(int a, int b)
 {
-    return (a * b);
+return (a * b);
 }
-
 /**
  * op_div - Returns the division of a by b.
  * @a: First integer.
@@ -47,14 +44,13 @@ int op_mul(int a, int b)
  */
 int op_div(int a, int b)
 {
-    if (b == 0)
-    {
-        printf("Error: division by zero\n");
-        exit(100); /* Exit with error code 100 */
-    }
-    return (a / b);
+if (b == 0)
+{
+printf("Error: division by zero\n");
+exit(100); /* Exit with error code 100 */
 }
-
+return (a / b);
+}
 /**
  * op_mod - Returns the remainder of the division of a by b.
  * @a: First integer.
@@ -65,10 +61,10 @@ int op_div(int a, int b)
  */
 int op_mod(int a, int b)
 {
-    if (b == 0)
-    {
-        printf("Error: division by zero\n");
-        exit(100); /* Exit with error code 100 */
-    }
-    return (a % b);
+if (b == 0)
+{
+printf("Error: division by zero\n");
+exit(100); /* Exit with error code 100 */
+}
+return (a % b);
 }
