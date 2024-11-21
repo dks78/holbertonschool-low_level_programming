@@ -6,9 +6,10 @@
  * @op: L'opérateur sous forme de chaîne (e.g. "+", "-").
  * @f: Pointeur vers la fonction associée.
  */
-typedef struct op {
-    char *op;
-    int (*f)(int a, int b);
+typedef struct op
+{
+char *op;
+int (*f)(int a, int b);
 } op_t;
 
 /* Prototypes des fonctions d'opération */
