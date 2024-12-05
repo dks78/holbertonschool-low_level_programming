@@ -1,9 +1,9 @@
- #include <stdlib.h>
+#include <stdlib.h>
 #include <string.h>
 #include "lists.h"
 
 /**
- * add_node - Ajoute un nouveau nœud au début d'une liste list_t.
+ * add_node_end - Ajoute un nouveau nœud à la fin d'une liste list_t.
  * @head: Double pointeur vers le début de la liste.
  * @str: Chaîne de caractères à dupliquer et à ajouter dans le nouveau nœud.
  *
@@ -17,7 +17,6 @@ list_t *add_node_end(list_t **head, const char *str)
     new_node = malloc(sizeof(list_t));
     if (new_node == NULL)
         return (NULL);
-
 
     new_node->str = strdup(str);
     if (new_node->str == NULL)
@@ -37,10 +36,10 @@ list_t *add_node_end(list_t **head, const char *str)
         return (new_node);
     }
 
+
     temp = *head;
     while (temp->next != NULL)
         temp = temp->next;
-
 
     temp->next = new_node;
 
