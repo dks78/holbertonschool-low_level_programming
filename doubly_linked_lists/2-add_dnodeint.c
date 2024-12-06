@@ -27,15 +27,16 @@ element->next = NULL;
 element->prev = NULL;
 
 
-    if (*head == NULL)
-    {
-        *head = element;
-    }
-    else
-    {
-    element->next = *head;
-    (*head)->prev = element;
-    *head = element;
+if (*head == NULL)
+{
+*head = element;
 }
+else
+{
+element->next = *head;
+(*head)->prev = element;
+*head = element;
+}
+
 return (*head);
 }
