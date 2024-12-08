@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "binary.h"
+#include "main.h"
 /**
  * binary_to_uint - Convertit une chaîne binaire en un entier non signé.
  * @b: Pointeur vers une chaîne de caractères contenant '0' et '1'.
