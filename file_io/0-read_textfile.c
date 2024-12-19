@@ -1,10 +1,11 @@
-
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <fcntl.h> /* Required for open */
 #include "main.h"
+
 /**
- * read_textfile - Reads a text file and prints it to the POSIX standard outpu
+ * read_textfile - Reads a text file and prints it to the POSIX standard output.
  * @filename: The name of the file to read.
  * @letters: The number of letters it should read and print.
  *
