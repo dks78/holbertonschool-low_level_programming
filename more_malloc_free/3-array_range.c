@@ -2,11 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * simple_print_buffer - prints buffer in hexa
- * @max: the address of memory to print
- * @min: the size of the memory to print
- * array_range -< function
- * Return: Nothing.
+ * array_range - creates an array of integers
+ * @min: minimum value of integer
+ * @max: maximum value of integer
+ * Return: pointer to array or NULL if malloc fails or min > max
  */
 int *array_range(int min, int max)
 {
