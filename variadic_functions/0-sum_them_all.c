@@ -13,23 +13,22 @@
  */
 int sum_them_all(const unsigned int n, ...)
 {
-unsigned int i;
-int sum;
-va_list ptr;
+    unsigned int i;
+    int sum;
+    va_list ptr; /*acceder a la liste d'arguments*/
 
-if (n == 0)
-{
-return (0);
-}
+    f (n == 0)
+    {
+    return (0);
+    }
 
-va_start(ptr, n);
+    va_start(ptr, n); /*Cette macro initialise la liste des arguments variables, en utilisant le dernier argument fixe.*/
+    for (i = 0 ; i < n; i++)
+    {
+    sum += va_arg(ptr, int);
+    }
 
-for (i = 0 ; i < n; i++)
-{
-sum += va_arg(ptr, int);
-}
+    va_end(ptr);
 
-va_end(ptr);
-
-return (sum);
+    return (sum);
 }
