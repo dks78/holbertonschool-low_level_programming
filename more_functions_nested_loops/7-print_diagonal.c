@@ -1,10 +1,14 @@
 #include "main.h"
 #include <stdio.h>
- /**
+/**
+ * print_diagonal - Prints a diagonal line of backslashes.
+ * @n: The number of lines in the diagonal.
+ * Description: This function prints a diagonal line made of backs('\').
+ * Each liis preceded by spaces, and the total number of lines printed is
+ * equal to tnput value `n`. If `n` is less than equal to 0, the function
+ * will print nothing but a new lin
  *
- * print_diagonal : Prints numbers from 0 to 9, excluding 2 and 4.
- * n: charactere
- * Return: Nothing (void)
+ * Return: Nothing (void).
  */
 void print_diagonal(int n)
 {
