@@ -3,15 +3,11 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
- * print_grid - prints a grid of integers
- * @grid: the address of the two dimensional grid
- * free_grid : fonction to libére memoire the pointer of array
-
- * @height: height of the grid
- *
- * Return: Nothing.
+ * free_grid - frees 2D grid created by alloc_grid
+ * @grid: double pointer to grid
+ * @height: height of grid
+ * Return: void
  */
 void free_grid(int **grid, int height)
 {
