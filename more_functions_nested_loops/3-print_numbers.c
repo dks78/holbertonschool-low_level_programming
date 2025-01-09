@@ -1,11 +1,9 @@
 #include "main.h"
 /**
- *  _isdigit - function
+ * print_numbers - Prints the numbers from 0 to 9 followed by a new line.
  *
- *  print_numbers - function to print 0 to 9
- *  n: charactere
- *  Return: Nothing (void)
-*/
+ * Return: Nothing.
+ */
 void print_numbers(void)
 {
 
