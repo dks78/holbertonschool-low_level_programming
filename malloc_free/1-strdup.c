@@ -1,52 +1,51 @@
-
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 
 /**
- * main - check the code
- * 
- * Return: Always 0.
+ * _strdup - returns pointer to a newly allocated space in memory which
+ * contains a copy of the string given as a parameter
+ * @str: string
+ * Return: pointer to allocated space in memory or NULL if str = NULL
  */
-/*Écrivez une fonction qui retourne un pointeur vers un espace nouvellement alloué en mémoire, qui contient une copie de la 
-chaîne de caractères donnée en paramètre.
-
-Prototype : char *_strdup(char *str);
-
-La fonction _strdup() retourne un pointeur vers une nouvelle chaîne de caractères qui est une duplication de la chaîne str. 
-La mémoire pour la nouvelle chaîne est obtenue avec malloc et peut être libérée avec free.
-Elle retourne NULL si str = NULL.
-En cas de succès, la fonction _strdup retourne un pointeur vers la chaîne dupliquée. Elle retourne NULL
-si la mémoire disponible est insuffisante.
-Pour information : La bibliothèque standard fournit une fonction similaire : strdup. Lancez man strdup pour en savoir plus.*/
 char *_strdup(char *str)
 {
-    int i;
-    int longeur;
-    char *copie;
+	char *ar;
+	int i;
+	int len;
 
-    if(str == NULL)
-    {
-        return NULL;
-    }
-    /*
-     Calculer la longeur de la chaîne*/
-  while (str[longeur] != '\0') 
-    {
-    longeur++;
-    }
+	if (str == NULL)
+		return (NULL);
 
-    
-    /*Allouer de la mémoire pour la nouvelle chaîne*/
+	len = _strlen(str);
 
+	ar = malloc((len * sizeof(char)) + 1);
 
-    copie = malloc(sizeof(char) * (longeur + 1));
-    if (copie == NULL)
-        return NULL;
+	if (ar == NULL)
+		return (NULL);
 
-    for ( i = 0; i < longeur; i++)
-        copie[i] = str[i];
-    copie[longeur] = '\0';
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		ar[i] = str[i];
+	}
+	ar[i] = '\0';
 
-    return copie;
+	return (ar);
+}
+
+/**
+ * _strlen - returns the length of a string
+ * @s: string to be evaluated
+ * Return: length of string
+ */
+int _strlen(char *s)
+{
+	int i = 0;
+
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+
+	return (i);
 }
