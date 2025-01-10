@@ -2,23 +2,22 @@
 #include <stdio.h>
 
 /**
- * print_array - print an array of integers
- * @a: an array of integers
- * @n: the number of elements to swap
+ * reverse_array - Reverses an array of integers.
+ * @a: Pointer to an array of integers.
+ * @n: Total number of elements in the array.
  *
- * Return: nothing.
+ * Return: Nothing.
  */
 void reverse_array(int *a, int n)
 {
-    int temp;
-    int i;
+	int temp;
+	int i;
 
-    /*Inverser le tableau en utilisant un swa*/ 
-    for (i = 0; i < n / 2; i++)
-    {
-        temp = a[i];
-        a[i] = a[n - 1 - i];
-        a[n - 1 - i] = temp;
-    }
+for (i = 0; i < n / 2; i++)
+
+{
+temp = a[i];
+a[i] = a[n - 1 - i];
+a[n - 1 - i] = temp;
 }
- 
+}
