@@ -1,13 +1,12 @@
 #include "main.h"
 #include <stdio.h>
 #include <string.h>
-
 /**
- * main - check the code
+ * cap_string - Capitalizes all words of a string.
+ * @str: The string to be capitalized.
  *
- * Return: Always 0.
+ * Return: The capitalized string.
  */
-
 char *cap_string(char *str)
 { 
     int i = 0, last_was_six = 0, capitalize_next = 1;
