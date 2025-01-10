@@ -3,11 +3,13 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * main - check the code
+ * _strcmp - compare two strings
+ * @s1: first string
+ * @s2: second string
  *
- * Return: Always 0.
+ * Return: difference between the first unmatched characters,
+ *         or 0 if both strings are equal.
  */
-
 int _strcmp(char *s1, char *s2)
 	{
 	while (*s1 && *s2)
