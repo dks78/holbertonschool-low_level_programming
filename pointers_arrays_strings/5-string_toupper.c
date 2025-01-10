@@ -1,14 +1,12 @@
 #include "main.h"
 #include <stdio.h>
+
 /**
- * main - check the code
- * string_toupper - fonction to change character minuscule a majuscule
- * @str : pointeur
+ * string_toupper - Convert all lowercase letters in a string to uppercase.
+ * @str: Pointer to the string to be converted.
  *
- *
- *
- *
-*/
+ * Return: Pointer to the converted string.
+ */
 char *string_toupper(char *str)
 {
 
